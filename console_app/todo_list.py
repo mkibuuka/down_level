@@ -3,7 +3,9 @@ from core.tasks import ToDo
 
 
 class ToDoList(object):
-    """A class that defines the attributes for a Todolist"""
+    """
+    A class that defines the attributes for a Todolist
+    """
 
     # list_id = 0
     todo_lists = []
