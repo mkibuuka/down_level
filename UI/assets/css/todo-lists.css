@@ -1,0 +1,314 @@
+/*-----master css customisation------ */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    padding: 20px;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/*-----------------header css--------------*/
+.heading {
+    overflow: hidden;
+    /* background-color: indianred; */
+    color: white;
+    padding: 10px 10px;
+    border-bottom: 5px solid indianred;
+}
+
+.heading .logo {
+    padding-top: 1px;
+}
+
+.title-1 {
+    color: black;
+    margin-top: 5px;
+    font-family: cursive;
+}
+
+.heading a {
+    float: right;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+.heading .logo {
+    font-size: 18px;
+    font-weight: bold;
+    float: left;
+}
+
+.heading a:hover {
+    background-color: indianred;
+    color: white;
+}
+
+.heading a.active {
+    background-color: dodgerblue;
+    color: white;
+}
+
+.header-align {
+    float: left;
+}
+
+@media screen and (max-width: 500px) {
+    .heading a {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+
+    .heading .logo {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+
+    .header-align {
+        float: none;
+    }
+
+    .heading {
+        background-color: unset;
+    }
+}
+
+/* ----------body------- */
+/* Create two unequal columns that float next to each other */
+
+/* general column display */
+
+.column {
+    padding: 10px;
+}
+
+/* left column */
+
+/* .left {
+    float: left;
+    width: 20%;
+} */
+
+/* todo-list image */
+
+.cover-image {
+    width: 5%;
+    max-width: 100%;
+    max-height: 100%;
+
+
+}
+
+/* info column section */
+
+#info-column p {
+    text-align: center;
+    font-size: 20px;
+}
+#info-column {
+    border: 5px solid indianred;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.19);
+    font-family: cursive;
+    font-weight: bold;
+    text-align: justify;
+    line-height: 20px;
+    /* float: right; */
+}
+
+/* ---todo-list */
+ /* Style the header */
+#todo-list-header {
+    /* background-color: indianred; */
+    padding: 0px 10px;
+    color: black;
+    text-align: center;
+    width: 100%;
+  }
+  #todo-list-header {
+      padding-top: 0;
+  }
+
+/* Style the input */
+input {
+    margin: 0;
+    border: none;
+    border: 3px solid cadetblue;
+    border-radius: 0;
+    width: 75%;
+    padding: 10px;
+    /* float: left; */
+    font-size: 16px;
+  }
+
+/* Style the "Add" button */
+.addBtn {
+    border: none;
+    border: 3px solid cadetblue;
+    padding: 10px;
+    padding-bottom: 0px;
+    width: 25%;
+    background: cadetblue;
+    color: white;
+    float: right;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+  }
+
+/* Clear floats after the header */
+.todo-list-header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+ul {
+    cursor: pointer;
+    position: relative;
+    padding: 10px 8px 12px 10px;
+    list-style-type: none;
+    background: #ddd;
+    font-size: 18px;
+    transition: 0.2s;
+
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    list-style-type: none;
+    /* background: #ddd; */
+    font-size: 18px;
+    transition: 0.2s;
+
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+/* Set all odd list items to a different color (zebra-stripes) */
+  ul li:nth-child(odd) {
+    background: #eee;
+  }
+
+/* Darker background-color on hover */
+ul li:hover {
+    background: cadetblue;
+  }
+
+/* Darker background-color on hover for even rows*/
+  /* ul li:hover:nth-child(even) {
+    background: rgb(248, 209, 141);
+  } */
+
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+  }
+
+  /* Style the close button */
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+  }
+
+  .close:hover {
+    background-color: #f44336;
+    color: white;
+  }
+
+
+@media screen and (max-width: 500px) {
+    input {
+        padding: 10px;
+    }
+}
+@media screen and (max-width: 800px) {
+
+    .footer img {
+        width: 10%;
+    }
+}
+
+/* Clear floats after the columns */
+
+.column:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* ----Footer--------- */
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+footer,
+small {
+    font-weight: 400;
+    color: black;
+}
+
+footer,
+body {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Aerial, sans-serif;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 800px) {
+
+    .leftcolumn,
+    .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+}
