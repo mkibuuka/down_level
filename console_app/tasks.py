@@ -1,5 +1,7 @@
 class ToDo(object):
-    """Class that defines attributes for a ToDo object."""
+    """
+    Class that defines attributes for a ToDo object.
+    """
     # list object to store todo items
     todos = []
 
