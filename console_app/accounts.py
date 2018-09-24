@@ -14,7 +14,6 @@ class User(object):
         cls.accounts[username] = user
         print(str(cls.accounts[username].email))
 
-
     @classmethod
     def login(cls, username):
         try:
