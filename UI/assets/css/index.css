@@ -19,7 +19,7 @@ body {
     /* background-color: indianred; */
     color: white;
     padding: 10px 10px;
-    border-bottom: 1px solid indianred;
+    border-bottom: 5px solid indianred;
 }
 
 .heading .logo {
@@ -41,6 +41,11 @@ body {
     line-height: 25px;
     border-radius: 4px;
 }
+
+.heading:focus {
+    background-color: indigo;
+}
+
 
 .heading .logo {
     font-size: 18px;
@@ -93,18 +98,34 @@ body {
 
 .left {
     float: left;
-    width: 75%;
+    width: 60%;
 }
 
 .right {
     float: right;
-    width: 25%;
+    width: 40%;
+
+}
+
+i {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    /* margin-left: 1em; */
+    width: 0.2em;
+
+}
+
+.right-arrow {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
 
 }
 
 img {
     max-width: 100%;
-    max-height: 100%;
+    height: 100%;
 }
 
 p {
@@ -123,9 +144,9 @@ p {
     height: 100%;
     margin-top: 60px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.19);
-    /* font-style: oblique; */
     font-family: cursive;
     font-weight: bold;
+    font-size: 18px;
 }
 
 a {
@@ -168,7 +189,7 @@ a {
 .footer {
     padding: 20px;
     text-align: center;
-    /* margin-top: 100px; */
+    margin-top: 600px;
 }
 
 
