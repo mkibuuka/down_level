@@ -207,11 +207,6 @@ input {
     clear: both;
 }
 
-#todo-list-items {
-/* padding-right: 30px; */
-
-}
-
 ul {
     cursor: pointer;
     position: relative;
