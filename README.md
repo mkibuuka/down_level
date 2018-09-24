@@ -22,3 +22,5 @@ My Todo-List web application facilates users with the ability to create lists of
 * A logged in user can delete completed tasks from the list if he/she wishes.
 * A logged in user can delete all tasks from the list if he/she wishes.
 * A logged in user can delete a todo-list if he/she wishes.
+
+[Please click me to preview the page templates!!](https://mkibuuka.github.io/down_level/UI/index.html)
