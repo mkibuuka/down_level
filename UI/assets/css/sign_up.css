@@ -214,6 +214,9 @@ a {
     margin-top: 600px;
 }
 
+.footer img {
+    width: 5%;
+}
 
 footer,
 small {
