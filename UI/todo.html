@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/todo.css" />
+</head>
+
+<body>
+    <nav>
+        <div class="heading" id="my-heading">
+            <!-- <img src="assets/images/icons8-list-64.png" class="logo"> -->
+            <span class="title-1 logo">My-Todo</span>
+            <div "header-align">
+                <a href="index.html">Logout</a>
+                <a href="todo-lists.html">Lists</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="row">
+        <div class="column left">
+            <img class="cover-image" src="assets/images/uu.png" alt="todo-list image">
+        </div>
+
+        <div class="column right" id="info-column">
+            <div id="todo-list-header">
+                <p>My Todo-list</p>
+                <input type="text" id="myInput" placeholder="Enter List Item Title...">
+                <span onclick="newElement()" class="addBtn">Add</span>
+            </div>
+            <ul id="todo-list-items">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="profile column left">
+        <div class="center-me">
+            <div class="right-image">
+                <img src="assets/images/avatar.png" alt="default-avator">
+            </div>
+
+            <p>Username: myco</p>
+            <p>Email: miki@blog.com</p>
+            <p>Total Todo-lists: 5</p>
+        </div>
+
+    </div>
+
+</body>
+<div class="footer"><img class="cover-image" src="assets/images/uu.png" alt="todo-list image">
+    <small>&copy;My todo-list 2018</small>
+</div>
+</html>
